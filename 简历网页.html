@@ -1,78 +1,123 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>陆毅的作品集
-    </title>
-    <style>
-      body {
-        margin: 0;
-      }
-      /*头部*/
-      .header {
-        /* 填充颜色 */
-        background-color: #252525;
-        /* 填充大小 */
-        padding: 20px;
-        /* 居中对齐 */
-        text-align: center;
-      }
-      /*导航条*/
-      .topnav {
-        /* 悬·浮 */
-        overflow: hidden;
-        /* 填充颜色 */
-        background-color: #b3b3b3;
-      }
-      /* 导航条 */
-      .topnav a {
-        /* 悬浮 */
-        float: left;
-        /* 显示一大块 */
-        display: block;
-        color: #000000;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      .topnav a:hover {
-        background-color: rgb(99, 99, 99);
-        color: rgb(0, 0, 0);
-      }
-      /* 列 */
-      .column {
-        background-color: rgb(143, 143, 143);
-        padding: 300px;
-        height: auto;
-        border: 3px solid #252525;
-      }
-      /* 底部 */
-      .footer {
-        background-color: #252525;
-        padding: 20px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- /*页眉*/ -->
-    <div class="header">
-      <img display: block; src=  alt="横幅" width="260"height="45";>
-      <p style="color: white">个人作品集</p>
-    </div>
-    <!-- /*导航栏*/ -->
-    <div class="topnav">
-      <a href="#">链接</a>
-      <a href="#">链接</a>
-      <a href="#">链接</a>
-    </div>
-    <!-- 列 -->
-    <div class="column"></div>
-    <!-- /*底部栏*/ -->
-    <div class="footer">
-      <p style="color: white">个人网页</p>
-      <p style="color: white">287396452@qq.com</p>
-    </div>
-  </body>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+  .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    #intro-section {
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    #education-section,
+    #work-section {
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 个人介绍 -->
+    <section id="intro-section">
+      <h1>个人介绍</h1>
+      <p>这里写上你的个人介绍，比如你的姓名、性格特点、兴趣爱好等。</p>
+    </section>
+
+    <!-- 学习经历 -->
+    <section id="education-section">
+      <h1>学习经历</h1>
+      <p>列出你的学校、专业和入学时间等信息。例如：[学校名称] - [专业] - [入学时间 - 毕业时间]。</p>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="work-section">
+      <h1>工作经历</h1>
+      <p>写下你的工作单位、职位和工作时间。例如：[公司名称] - [职位] - [入职时间 - 离职时间]。</p>
+    </section>
+
+    <!-- 图片展示 -->
+    <section id="image-section">
+      <h1>图片展示</h1>
+      <img src="your_image1.jpg" alt="图片1">
+      <img src="your_image2.jpg" alt="图片2">
+    </section>
+
+    <!-- 视频展示 -->
+    <section id="video-section">
+      <h1>视频展示</h1>
+      <video controls>
+        <source src="your_video.mp4" type="video/mp4">
+        您的浏览器不支持视频播放。
+      </video>
+    </section>
+
+    <!-- 图片合集（这里假设用按钮交互显示隐藏更多图片，可自行扩展） -->
+    <section id="image-gallery-section">
+      <h1>图片合集</h1>
+      <img src="your_image3.jpg" alt="图片3">
+      <img src="your_image4.jpg" alt="图片4">
+      <button onclick="showMoreImages()">查看更多图片</button>
+      <script>
+        function showMoreImages() {
+          // 这里可以添加显示更多图片的逻辑，比如创建新的img元素并添加到DOM
+          alert('更多图片功能待完善！');
+        }
+      </script>
+    </section>
+  </div>
+</body>
+
 </html>
+ 
+
